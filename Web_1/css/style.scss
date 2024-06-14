@@ -1,6 +1,6 @@
 $background_color: #fffcf2;
 $color2: #0060A9;
-$color3: #403d39;
+$color3: #024c85;
 $color4: #252422;
 $color5 : white;
 $font_color: white;
@@ -66,9 +66,17 @@ nav > label.active {
 
 .nav-links {
     float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.nav-links > li > a{
+
+.unclickable {
+    cursor: default;
+}
+
+.nav-link{
     text-decoration: none;
     font-size: 18px;
     color: $font_color;
@@ -85,13 +93,13 @@ nav > label.active {
     font-weight: bold;
 }
 
-.nav-links > li > a.active::before {
+.nav-link.active::before {
     color: $color4;
     transform-origin: left;
     transform: scaleX(1);
 }
 
-.nav-links > li > a::before {
+.nav-link::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -105,7 +113,7 @@ nav > label.active {
     transition: transform .3s ease-in-out;
 }
 
-.nav-links> li > a:hover::before {
+.nav-link:hover::before {
     transform-origin: left;
     transform: scaleX(1);
   }
@@ -113,7 +121,6 @@ nav > label.active {
 .nav-links > li {
     list-style: none;
     display: inline-block;
-    line-height: 95px;
     margin: 0 25px;
 }
 
@@ -154,6 +161,22 @@ nav {
     margin: 0 auto;
 }
 
+// DROPDOWN MENU
+.dropdown_item > div {
+    position: relative;
+    padding-top: -7px;
+}
+
+.dropdown_menu {
+    background-color: $color2;
+}
+
+.dropdown_menu > li > a {
+    color: $background_color;
+    font-size: 20px;
+    text-decoration: none;
+}
+
 @media (max-width: 1400px) {
     nav {
         margin: 0;
@@ -161,6 +184,24 @@ nav {
 }
 
 @media (max-width: 790px) {
+
+    .dropdown_menu {
+        margin-top: 20px;
+    }
+
+    .dropdown_item > div {
+        margin-top: 0;
+
+    }
+    
+    .dropdown_menu > li > a {
+        font-size: 24px;
+    }
+
+    .dropdown_menu > li {
+        padding: 20px 0;
+        background-color: $color3;
+    }
 
     // NAV BAR
 
@@ -183,6 +224,8 @@ nav {
 
     .nav-links {
         margin-top: -10px;
+        display: block;
+
     }
 
     .nav-icon > i {
@@ -209,11 +252,12 @@ nav {
 
     .nav-links > li {
         display: block;
-        margin: 0;
-        padding: 0;
+        margin: 20px 0;
+        padding: 10px 0 ;
+
     }
 
-    .nav-links > li > a {
+    .nav-link {
         font-size: 30px;
     }
 
