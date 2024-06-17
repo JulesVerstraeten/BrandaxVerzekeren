@@ -1,0 +1,120 @@
+$background_color: #fffcf2;
+$color2: #0060A9;
+$color2_hover: #0a78cc;
+$color3: #024c85;
+$color3_hover: #02406e;
+$color_schade: #ca0000;
+$color_schade_hover: #970101;
+
+$color4: #252422;
+$color5 : white;
+$font_color: white;
+
+$font_semi_bold: 400;
+
+$title-font : Mukta;
+$normal-font : roboto;
+$logo_font_family: PT Serif;
+
+$title_font_size: 62px;
+$normal-font-size : 20px;
+$link_font_size:16px;
+
+h1 {
+    color: $color2;
+}
+
+main {
+    margin:auto;
+    margin-top: 125px;
+}
+
+.section1 {
+    text-align: center;
+}
+
+.section1 > h1 {
+    font-family: $logo_font_family;
+    font-size: $title_font_size;
+    color: $color2;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.section1 >  h1 > span {
+    letter-spacing: 3px;
+}
+
+.section1 > p {
+    width: 600px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.link_button {
+    background-color: $color2;
+    color: $background_color;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: $link_font_size;
+    box-shadow: inset 0 0 0 0 $color2_hover;
+    transition: box-shadow 0.4s;
+    border-radius: 5px;
+}
+
+.link_button:hover {
+    box-shadow: inset 170px 0 0 0 $color2_hover;
+
+}
+
+.section2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container_icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap:5rem;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.icon_button {
+    text-align: center;
+    color: $color2;
+    padding:10px 20px;
+    border-top: 2px solid $color2;
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 0 $color2;
+    transition: box-shadow .4s, color .2s;
+    min-width: 200px;
+}
+
+.icon_button:hover {
+    box-shadow: inset 0 100px 0 0 $color2;
+    color: $font_color;
+}
+
+
+.icon_button > i {
+    font-size: 40px;
+}
+
+.section3 {
+    margin-top:50px;
+    background-color: $color2;
+    color: $font_color;
+}
+.section3 > div > h1 {
+    color: $font_color;
+    margin-bottom: 10px;
+}
+
+.section3 > div {
+    width: 60%;
+    margin: auto;
+    padding: 30px 0;
+}

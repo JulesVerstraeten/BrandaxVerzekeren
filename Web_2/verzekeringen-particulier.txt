@@ -1,0 +1,9 @@
+Aansprakelijkheids verzekering : <i class="ri-scales-3-line"></i>
+Reis verzekering : <i class="ri-flight-takeoff-fill"></i>
+Rechtbijstand verzekering : <i class="ri-auction-line"></i>
+Auto verzekering : <i class="ri-car-line"></i>
+Motor verzekering : <i class="ri-motorbike-line"></i>
+Brommer verzekering : <i class="ri-e-bike-line"></i>
+Ongeval verzekering : <i class="ri-first-aid-kit-line"></i>
+Huis verzekering : <i class="ri-home-8-line"></i>
+Inboedel verzekering : <i class="ri-armchair-line"></i>
