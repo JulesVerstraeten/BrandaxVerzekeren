@@ -1,0 +1,54 @@
+$background_color: #fffcf2;
+$color2: #0060A9;
+$color2_hover: #0a78cc;
+$color3: #024c85;
+$color3_hover: #02406e;
+$color_schade: #c42b2b;
+$color_schade_hover: #9e2929;
+
+$color4: #252422;
+$color5 : white;
+$font_color: white;
+
+$font_semi_bold: 400;
+
+$title-font : Mukta;
+$normal-font : roboto;
+
+$normal-font-size : 20px;
+
+footer {
+    background-color: $color2;
+    width: 100%;
+    font-size: 16px;
+    color: $font_color;
+    padding: 25px 0;
+    margin-top: 5px;
+}
+
+.footer_links {
+    display: grid;
+}
+
+.footer_links > a {
+    color: $font_color;
+}
+
+.footer_info {
+    display: grid;
+}
+
+.footer_contact {
+    display: grid;
+}
+
+.footer_container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.footer_logo {
+    max-width: 5%;
+}
