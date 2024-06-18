@@ -25,9 +25,17 @@ h1 {
 }
 
 main {
+    width: 100%;
     margin:auto;
     margin-top: 125px;
+    margin-bottom: 5px;
 }
+
+/*==== ==== ==== ==== ==== ==== ==== ====*/
+/*==== ==== ==== HOME PAGE ==== ==== ====*/
+/*==== ==== ==== ==== ==== ==== ==== ====*/
+
+/*====SECTION 1====*/
 
 .section1 {
     text-align: center;
@@ -68,6 +76,8 @@ main {
 
 }
 
+/*====SECTION 2====*/
+
 .section2 {
     text-align: center;
     margin-top: 50px;
@@ -79,7 +89,7 @@ main {
     width: 80%;
     margin: auto;
     margin-top: 50px;
-    grid-row-gap: 2rem;
+    grid-gap: 4rem;
 }
 
 .icon_button {
@@ -104,30 +114,70 @@ main {
     font-size: 40px;
 }
 
+/*====SECTION 3====*/
+
 .section3 {
+    overflow: hidden;
+    width: 75%;
+    margin: auto;
+    margin-top:100px;
+}
+
+.info_text {
+    position: absolute;
+    width: 50%;
+    background-color: $color2;
+    color: $font_color;
+    z-index: 100;
+    margin-top:270px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    box-shadow: rgba(38, 57, 77, 0.781) 10px 10px 15px -10px;
+    
+    padding-bottom: 30px;
+}
+
+.info_text > p {
+    margin: 15px;
+    margin-bottom: 25px;
+}
+
+.info_text > h1 {
+    color: $font_color;
+    font-size: 48px;
+}
+
+.foto > img {
+    width: 575px;
+    float: right;
+    border-radius: 5px;
+}
+
+/*==== SECTION 4====*/
+
+.section4 {
     margin-top:50px;
     background-color: $color2;
     color: $font_color;
 }
-.section3 > div > h1 {
+.section4 > div > h1 {
     color: $font_color;
     margin-bottom: 25px;
     font-size: 48px;
 }
 
-.section3 > div {
+.section4 > div {
     width: 60%;
     margin: auto;
     padding: 30px 0;
 }
 
-.section3 >div> p {
+.section4 >div> p {
     margin-bottom: 50px;
 }
 
 .link_container {
     width: 100%;
-    text-align: center;
 }
 
 .link_container > a{
@@ -140,6 +190,25 @@ main {
 }
 
 .link_container > a:hover {
+    box-shadow: inset 280px 0 0 0 $color2_hover;
+    color: white;
+}
+
+.link_container_center {
+    width: 100%;
+    text-align: center;
+}
+
+.link_container_center > a{
+    background-color: white;
+    color: $color2;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 $color2_hover;
+    transition: box-shadow .3s, color .2s;
+}
+
+.link_container_center > a:hover {
     box-shadow: inset 280px 0 0 0 $color2_hover;
     color: white;
 }
@@ -187,7 +256,6 @@ main {
 @media screen and (max-width: 700px) {
     .container_icons {
         width: 95%;
-
     }
 
     .icon_button {
@@ -200,3 +268,41 @@ main {
         width: 90%;
     }
 }
+
+/*==== ==== ==== ==== ==== ==== ==== ==== ====*/
+/*==== ==== ==== OVER ONS  PAGE ==== ==== ====*/
+/*==== ==== ==== ==== ==== ==== ==== ==== ====*/
+
+.over_ons_section1 {
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  .over_ons_info_text {
+    position: absolute;
+    width: 50%;
+    background-color: #0060A9;
+    color: white;
+    z-index: 100;
+    margin-top: 70px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    box-shadow: rgba(38, 57, 77, 0.603) 15px 15px 30px -12px;
+    right: 200px;
+  }
+  
+  .over_ons_info_text > p {
+    margin: 15px;
+    margin-left: 25px;
+  }
+  
+  .over_ons_info_text > h1 {
+    color: white;
+    font-size: 48px;
+  }
+  
+  .over_ons_foto > img {
+    width: 575px;
+    border-radius: 5px;
+  }

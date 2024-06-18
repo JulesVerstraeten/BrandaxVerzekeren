@@ -51,7 +51,8 @@ a {
     left: 0;
     width: 100%;
     background-color: $color2;
-    z-index: 100;
+    z-index: 101;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 12px 25px -12px;
 }
 
 /* ==== NAV ==== */
@@ -98,7 +99,7 @@ a {
 
 
 /* ==== NAV FOR MOBILE ==== */
-@media screen and (max-width: 1118px){
+@media screen and (max-width: 1250px){
 
     
 
@@ -246,7 +247,7 @@ a {
 
 
 /* larger devices */
-@media screen and (min-width: 1118px) {
+@media screen and (min-width: 1250px) {
     .active {
         font-weight: 700;
     }

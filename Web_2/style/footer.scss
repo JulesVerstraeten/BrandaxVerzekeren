@@ -17,13 +17,18 @@ $normal-font : roboto;
 
 $normal-font-size : 20px;
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
     background-color: $color2;
     width: 100%;
     font-size: 16px;
     color: $font_color;
     padding: 25px 0;
-    margin-top: 5px;
+    margin-top: auto;
 }
 
 .footer_links {
