@@ -56,7 +56,7 @@ main {
   width: 80%;
   margin: auto;
   margin-top: 50px;
-  grid-gap: 4rem;
+  grid-row-gap: 2rem;
 }
 
 .icon_button {
