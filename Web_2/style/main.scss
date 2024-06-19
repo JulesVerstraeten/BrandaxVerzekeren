@@ -127,7 +127,7 @@ main {
 
 .info_text {
     position: absolute;
-    width: 50%;
+    width: 48%;
     background-color: $color2;
     color: $font_color;
     z-index: 100;
@@ -140,8 +140,7 @@ main {
 }
 
 .info_text > p {
-    margin: 15px;
-    margin-bottom: 25px;
+    margin: 15px 0 25px 15px;
 }
 
 .info_text > h1 {
@@ -300,34 +299,44 @@ margin-bottom: 50px;
     margin-top: 50px;
 }
 
+/* ==== OVER ONS CONTAINER ==== */
+
+.over_ons_container {
+    position: absolute;
+    z-index: 100;
+    width: 60%;
+    right: 0;
+}
+
 /* ==== Text 1 ==== */
 
 .over_ons_info_text {
-position: absolute;
-width: 50%;
+width: 85%;
 background-color: $color2;
 color: white;
-z-index: 100;
 margin-top: 70px;
 padding: 20px 40px;
 border-radius: 5px;
 box-shadow: rgba(38, 57, 77, 0.603) -15px 15px 30px -12px;
-right: 200px;
 }
 
 /*==== Text 2 ====*/
 
 .over_ons_info_text2 {
-position: absolute;
-right: 260px;
-width: 40%;
-margin-top: 300px;
+    width: 70%;
+    margin: auto;
 }
     
 
 /* ==== COLORS ==== */
 .blue {
     color: $color2;
+}
+
+@media screen and (max-width: 1600px) {
+    .over_ons_section1 {
+        width: 90%;
+    }
 }
 
 /*==== ==== ==== ==== ==== ==== ==== ==== ====*/
@@ -363,10 +372,10 @@ margin-top: 300px;
 
 .contact_form {
     width: 100%;
-    background-color: $color2;
     padding: 35px;
     border-radius: 5px;
     block-size: fit-content;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .contact_form_container > textarea {
@@ -380,6 +389,8 @@ margin-top: 300px;
     font-size: 20px;
     padding: 5px 10px;
     border: none;
+    outline: 2px solid lightgrey;
+    border-radius: 5px;
 }
 
 .contact_form_container > input:focus, textarea:focus, select:focus {
@@ -398,20 +409,38 @@ margin-top: 300px;
 
 /* ==== CONTACT INFO ==== */
 
+.contact_info_container {
+    width: 100%;
+    padding: 35px;
+    border-radius: 5px;
+    block-size: fit-content;
+    background-color: $color2;
+    color: white;
+}
+
 .contact_info {
     width: 100%;
 }
 
 .contact_info_container > div > h2 {
-    color: $color2;
-    margin-top: 10px;
+    color: white;
+    margin-bottom: 10px;
 }
 .contact_info_container > div > p > a {
-    color: $color3;
+    color: white;
+    text-decoration: underline;
 }
-
 
 .contact_maps {
     margin-top: 25px;
     margin-bottom: 40px;
+}
+
+
+/* ==== ==== ==== */
+/* ==== EXTRA==== */
+/* ==== ==== ==== */
+
+.margin_20 {
+    margin-bottom: 20px;
 }
