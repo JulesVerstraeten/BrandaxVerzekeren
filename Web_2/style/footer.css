@@ -12,6 +12,11 @@ footer {
   margin-top: auto;
 }
 
+.bottom {
+  position: fixed;
+  bottom: 0;
+}
+
 .footer_links {
   display: grid;
 }

@@ -31,6 +31,8 @@ main {
     margin-bottom: 5px;
 }
 
+
+
 /*==== ==== ==== ==== ==== ==== ==== ====*/
 /*==== ==== ==== HOME PAGE ==== ==== ====*/
 /*==== ==== ==== ==== ==== ==== ==== ====*/
@@ -273,36 +275,143 @@ main {
 /*==== ==== ==== OVER ONS  PAGE ==== ==== ====*/
 /*==== ==== ==== ==== ==== ==== ==== ==== ====*/
 
+/* ==== Algemeen ==== */
+
+.over_ons_p {
+    margin: 25px;
+  }
+  
+  .over_ons_h1 {
+    color: white;
+    font-size: 48px;
+  }
+
+/*==== FOTO ====*/
+.over_ons_foto > img {
+    width: 575px;
+    border-radius: 5px;
+margin-bottom: 50px;
+
+  }
+
 .over_ons_section1 {
     width: 75%;
     margin: auto;
     margin-top: 50px;
-  }
-  
-  .over_ons_info_text {
-    position: absolute;
-    width: 50%;
-    background-color: #0060A9;
-    color: white;
-    z-index: 100;
-    margin-top: 70px;
-    padding: 20px 40px;
+}
+
+/* ==== Text 1 ==== */
+
+.over_ons_info_text {
+position: absolute;
+width: 50%;
+background-color: $color2;
+color: white;
+z-index: 100;
+margin-top: 70px;
+padding: 20px 40px;
+border-radius: 5px;
+box-shadow: rgba(38, 57, 77, 0.603) -15px 15px 30px -12px;
+right: 200px;
+}
+
+/*==== Text 2 ====*/
+
+.over_ons_info_text2 {
+position: absolute;
+right: 260px;
+width: 40%;
+margin-top: 300px;
+}
+    
+
+/* ==== COLORS ==== */
+.blue {
+    color: $color2;
+}
+
+/*==== ==== ==== ==== ==== ==== ==== ==== ====*/
+/*==== ==== ==== CONTACT   PAGE ==== ==== ====*/
+/*==== ==== ==== ==== ==== ==== ==== ==== ====*/
+
+/* ==== CONTACT FORM ==== */
+
+.over_ons_title {
+    text-align: center;
+    margin: 25px;
+    margin-bottom: 50px;
+    font-size: 56px;
+}
+
+.contact_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.contact_form_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+.contact_form_container > textarea {
+    grid-column: 1/3;
+}
+
+.contact_form {
+    width: 100%;
+    background-color: $color2;
+    padding: 35px;
     border-radius: 5px;
-    box-shadow: rgba(38, 57, 77, 0.603) 15px 15px 30px -12px;
-    right: 200px;
-  }
-  
-  .over_ons_info_text > p {
-    margin: 15px;
-    margin-left: 25px;
-  }
-  
-  .over_ons_info_text > h1 {
-    color: white;
-    font-size: 48px;
-  }
-  
-  .over_ons_foto > img {
-    width: 575px;
-    border-radius: 5px;
-  }
+    block-size: fit-content;
+}
+
+.contact_form_container > textarea {
+    resize: vertical;
+    min-height: 150px;
+    max-height: 250px;
+    height: 100px;
+}
+
+.contact_form_container > input, textarea, select {
+    font-size: 20px;
+    padding: 5px 10px;
+    border: none;
+}
+
+.contact_form_container > input:focus, textarea:focus, select:focus {
+    outline: 4px solid $color3_hover;
+}
+
+.contact_input_button {
+    text-align: center;
+}
+
+.contact_input_button > input {
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-top : 1rem;
+}
+
+/* ==== CONTACT INFO ==== */
+
+.contact_info {
+    width: 100%;
+}
+
+.contact_info_container > div > h2 {
+    color: $color2;
+    margin-top: 10px;
+}
+.contact_info_container > div > p > a {
+    color: $color3;
+}
+
+
+.contact_maps {
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
