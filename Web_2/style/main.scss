@@ -533,17 +533,3 @@ box-shadow: rgba(38, 57, 77, 0.603) -15px 15px 30px -12px;
 .margin_20 {
     margin-bottom: 20px;
 }
-
-.fade-in-selection {
-    opacity: 0;
-    transform: translateY(20vh);
-    transition: opacity 0.6s ease-in-out, transform 1.2s ease-in-out;
-    visibility: hidden;
-    will-change: opacity, transform;
-}
-
-.fade-in-selection.is-visible {
-    opacity: 1;
-    transform: none;
-    visibility: visible;
-}
