@@ -212,7 +212,7 @@ a {
   margin-left: auto;
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 400px) {
   .container {
     margin-inline: 1rem;
   }

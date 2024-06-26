@@ -123,11 +123,12 @@ main {
     width: 75%;
     margin: auto;
     margin-top:100px;
+    margin-bottom: 50px;
 }
 
 .info_text {
     position: absolute;
-    width: 48%;
+    width: 47%;
     background-color: $color2;
     color: $font_color;
     z-index: 100;
@@ -140,7 +141,8 @@ main {
 }
 
 .info_text > p {
-    margin: 15px 0 25px 15px;
+    margin: 25px 0 50px 15px;
+
 }
 
 .info_text > h1 {
@@ -152,6 +154,54 @@ main {
     width: 575px;
     float: right;
     border-radius: 5px;
+    display: block;
+}
+
+@media screen and (max-width: 1500px) {
+    .section3 {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1300px)  {    
+    .info_text {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1150px)  {
+    .info_text {
+        margin-top: 130px;
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 1000px)  {
+    .info_text { 
+        width: 95%;
+        position: relative;
+        margin: auto;
+        margin-top: -60px;
+    }
+
+    .foto > img {
+        width: 90%;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    
+}
+
+@media screen and (max-width: 600px)  {
+    .info_text{
+        padding: 20px;
+    }
+
+    .info_text > p {
+        margin:25px 0 0 0;
+    }
+    
 }
 
 /*==== SECTION 4====*/
@@ -264,7 +314,7 @@ main {
         width: 150px;
     }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
     .section1 > p {
         width: 90%;
     }
@@ -391,10 +441,26 @@ box-shadow: rgba(38, 57, 77, 0.603) -15px 15px 30px -12px;
     border: none;
     outline: 2px solid lightgrey;
     border-radius: 5px;
+    width: 100%;
+}
+
+.contact_form_submit_button {
+    background-color: $color2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 10px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 $color2_hover;
+    transition: box-shadow .3s;
+}   
+
+.contact_form_submit_button:hover {
+    box-shadow: inset 150px 0 0 0 $color2_hover;
 }
 
 .contact_form_container > input:focus, textarea:focus, select:focus {
-    outline: 4px solid $color3_hover;
+    outline: 2px solid $color3_hover;
 }
 
 .contact_input_button {
@@ -403,8 +469,8 @@ box-shadow: rgba(38, 57, 77, 0.603) -15px 15px 30px -12px;
 
 .contact_input_button > input {
     font-size: 20px;
-    padding: 5px 10px;
-    margin-top : 1rem;
+    padding: 10px 20px;
+    margin-top : 25px;
 }
 
 /* ==== CONTACT INFO ==== */
@@ -433,7 +499,30 @@ box-shadow: rgba(38, 57, 77, 0.603) -15px 15px 30px -12px;
 
 .contact_maps {
     margin-top: 25px;
-    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+    .contact_container {
+        display: block;
+    }
+
+    .contact_form {
+        margin-bottom: 50px;
+    }
+
+    .contact_info_container {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact_form_container {
+        display: block;
+    }
+
+    .contact_form_container > input, textarea, select {
+        margin: 10px 0;
+    }
 }
 
 
@@ -443,4 +532,18 @@ box-shadow: rgba(38, 57, 77, 0.603) -15px 15px 30px -12px;
 
 .margin_20 {
     margin-bottom: 20px;
+}
+
+.fade-in-selection {
+    opacity: 0;
+    transform: translateY(20vh);
+    transition: opacity 0.6s ease-in-out, transform 1.2s ease-in-out;
+    visibility: hidden;
+    will-change: opacity, transform;
+}
+
+.fade-in-selection.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
 }

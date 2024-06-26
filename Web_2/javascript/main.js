@@ -15,3 +15,8 @@ function showMenu(toggleId, navId) {
     
 }
 showMenu('nav-toggle', 'nav-menu');
+
+/* ==== SHOW VISIBILITY ==== */
+function FadeInSection(props) {
+    cosnt [isVisible, setVisible] = React
+}
